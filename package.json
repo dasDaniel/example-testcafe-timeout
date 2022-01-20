@@ -1,0 +1,13 @@
+{
+  "name": "example-testcafe-timeout",
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "http-server ./public -p 7772 -c 1",
+    "test": "testcafe chrome ./tests/"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.0",
+    "testcafe": "^1.18.2"
+  }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title></title>
+  </head>
+
+  <body>
+    <input id="myInput" />
+    <button id="myBtn">🟠</button>
+
+    <script>
+      myInput.oninput = async (e) => {
+        myBtn.disabled = true;
+        await fetch("/api.json");
+        myBtn.disabled = false;
+      };
+    </script>
+  </body>
+</html>
